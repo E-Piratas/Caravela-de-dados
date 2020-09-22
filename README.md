@@ -1,7 +1,8 @@
+#  **CARAVELA DE DADOS**
 
 ![E-Piratas-Logo](https://github.com/E-Piratas/Caravela-De-Dados/blob/master/documentos/Imagens/E-Piratas-Logo.png)
----
-#  **CARAVELA DE DADOS**
+--- ---
+
 ## **Projeto de comunicação MQTT e IOT**                   
 
 **Versão** **0.4**
@@ -67,7 +68,7 @@ Em nosso programa o ESP 32 lê os dados e transforma essas informações em uma 
 
 ### O envio dos dados seriais a partir da ESP32
 
-'''c++
+```c++
 void Envia_por_request ()
 {
   long now = millis();
@@ -114,10 +115,11 @@ void Envia_por_request ()
   }
   // }
 } 
-'''
+```
 
 ### O ´Destino desta informação o Banco de Dados
-'''C++
+
+```c++
   {
         "id": "2f8c7ffd.a3ab",
         "type": "MySQLdatabase",
@@ -139,5 +141,5 @@ void Envia_por_request ()
         "disabled": true,
         "hidden": true
     }
-    '''
+    ```
 
