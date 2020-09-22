@@ -1,0 +1,181 @@
+[
+    {
+        "id": "79079cba.bf9c24",
+        "type": "tab",
+        "label": "Automação Casa IOT Watson",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "29cd61c4.1c526e",
+        "type": "ibmiot in",
+        "z": "79079cba.bf9c24",
+        "authentication": "boundService",
+        "apiKey": "59c73322.f2ad5c",
+        "inputType": "evt",
+        "logicalInterface": "",
+        "ruleId": "",
+        "deviceId": "001",
+        "applicationId": "",
+        "deviceType": "ESP32Device",
+        "eventType": "status",
+        "commandType": "temperature",
+        "format": "json",
+        "name": "Recebendo dados",
+        "service": "registered",
+        "allDevices": true,
+        "allApplications": "",
+        "allDeviceTypes": true,
+        "allLogicalInterfaces": "",
+        "allEvents": true,
+        "allCommands": true,
+        "allFormats": true,
+        "qos": "1",
+        "x": 169,
+        "y": 286,
+        "wires": [
+            [
+                "69762ad4.239a54",
+                "357fe95f.4bb866"
+            ]
+        ],
+        "info": "temperatura = JSON.parse(registered);\nvar temperatura = temperatura[\"d.temperature\"];\nretrun temperatura;"
+    },
+    {
+        "id": "919cf147.653d9",
+        "type": "ui_gauge",
+        "z": "79079cba.bf9c24",
+        "name": "",
+        "group": "3b2206bf.612ada",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperatura",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 499,
+        "y": 316,
+        "wires": [],
+        "l": false
+    },
+    {
+        "id": "357fe95f.4bb866",
+        "type": "function",
+        "z": "79079cba.bf9c24",
+        "name": "",
+        "func": "msg.payload = msg.payload.Barco.S0+msg.payload.Barco.S1+msg.payload.Barco.S2+msg.payload.Barco.S3+msg.payload.Barco.S4+msg.payload.Barco.S5+msg.payload.Barco.S6+msg.payload.Barco.S7+msg.payload.Barco.S8+msg.payload.Barco.S9+msg.payload.Barco.S10+msg.payload.Barco.S11+msg.payload.Barco.S12+msg.payload.Barco.S13+msg.payload.Barco.S14+msg.payload.Barco.S15+msg.payload.Barco.S16+msg.payload.Barco.S17+msg.payload.Barco.S18+msg.payload.Barco.S19+msg.payload.Barco.S20+msg.payload.Barco.S21+msg.payload.Barco.S22+msg.payload.Barco.S23+msg.payload.Barco.S24;\nmsg.payload = msg.payload/25;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 393.5,
+        "y": 286,
+        "wires": [
+            [
+                "43bbb15.37edc5",
+                "919cf147.653d9"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "43bbb15.37edc5",
+        "type": "ui_chart",
+        "z": "79079cba.bf9c24",
+        "name": "",
+        "group": "3b2206bf.612ada",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Gráfico",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "bezier",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "1",
+        "removeOlderPoints": "1000",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 490.5,
+        "y": 254,
+        "wires": [
+            []
+        ],
+        "l": false
+    },
+    {
+        "id": "69762ad4.239a54",
+        "type": "debug",
+        "z": "79079cba.bf9c24",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 354.5,
+        "y": 188,
+        "wires": [],
+        "l": false
+    },
+    {
+        "id": "59c73322.f2ad5c",
+        "type": "ibmiot",
+        "z": "",
+        "name": "",
+        "keepalive": "60",
+        "serverName": "",
+        "cleansession": true,
+        "appId": "",
+        "shared": false
+    },
+    {
+        "id": "3b2206bf.612ada",
+        "type": "ui_group",
+        "z": "",
+        "name": "Barco",
+        "tab": "55e21d6.d4a52e4",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "55e21d6.d4a52e4",
+        "type": "ui_tab",
+        "name": "Tab 1",
+        "icon": "dashboard",
+        "order": 1
+    }
+]
