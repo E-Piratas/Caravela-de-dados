@@ -64,3 +64,80 @@ Devido a sua alta capacidade, a empresa amazon disponibiliza diversos tutoriais,
 Em nosso programa o ESP 32 lê os dados e transforma essas informações em uma arquivo json, utilizando o protocolo Mqtt, o arquivo json envia os dados até o IBM watson, onde é apresentado na tela e gravado no banco de dados MySQL instanciado na AWS.
 
 ![comunica](https://github.com/E-Piratas/Caravela-De-Dados/blob/master/documentos/Imagens/diagrama.png)
+
+### O envio dos dados seriais a partir da ESP32
+
+'''c++
+void Envia_por_request ()
+{
+  long now = millis();
+  //  if (now - lastMsg > 1000) {
+  lastMsg = now;
+
+//  sensor1= random(2, 33);
+//  sensor2= random(10, 60);
+//  sensor3= random(10, 30);
+//  sensor4= random(10, 100);
+//  sensor5= random(10, 80);
+
+  String payload = "{\"Barco\":{";
+
+  for(int i = 0; i<QTD; i++){
+    payload += "\"S";
+    payload += i;
+    payload += "\":";
+    payload += random(2, 19);
+    if(i != (QTD-1)){
+      payload += ",";
+    }
+    
+  }
+  payload += "}}";
+
+ 
+
+  if (client.publish(pubTopic, payload.c_str())) {
+    Serial.println("Publish ok");
+    Serial.println(payload);
+    Serial.println(payload.c_str());
+  }
+  else {
+    Serial.println("Publish failed");
+    client.disconnect();
+    Serial.print("Reconnecting client to ");
+    Serial.println(server);
+    while (!client.connect(clientId, authMethod, token)) {
+      Serial.print(".");
+      delay(500);
+    }
+
+  }
+  // }
+} 
+'''
+
+### O ´Destino desta informação o Banco de Dados
+'''C++
+  {
+        "id": "2f8c7ffd.a3ab",
+        "type": "MySQLdatabase",
+        "z": "",
+        "name": "Banco de Dados MySQL",
+        "host": "aws-database-es.cqvuvpg11ndd.sa-east-1.rds.amazonaws.com",
+        "port": "3306",
+        "db": "Caravela_de_Dados",
+        "tz": ""
+    },
+    {
+        "id": "5269a18.a41ee6",
+        "type": "ui_tab",
+        "z": "",
+        "d": true,
+        "name": "Usuários",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": true,
+        "hidden": true
+    }
+    '''
+
