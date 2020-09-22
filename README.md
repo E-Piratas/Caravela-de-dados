@@ -1,5 +1,5 @@
 
-![E-Piratas-Logo](https://github.com/E-Piratas/Caravela-de-dados/blob/master/E-Piratas-Logo.png)
+![E-Piratas-Logo](https://github.com/E-Piratas/Caravela-De-Dados/blob/master/documentos/Imagens/E-Piratas-Logo.png)
 ---
 #  **CARAVELA DE DADOS**
 ## **Projeto de comunicação MQTT e IOT**                   
