@@ -117,7 +117,7 @@ void Envia_por_request ()
 } 
 ```
 
-### O ´Destino desta informação o Banco de Dados
+### O Destino desta informação o Banco de Dados
 
 ```c++
   {
