@@ -11,11 +11,12 @@ Recursos
 * [Requisitos de Projeto](https://github.com/E-Piratas/Caravela-de-dados/wiki)
 	* [INTRODUÇÃO](https://github.com/E-Piratas/Caravela-De-Dados/wiki#1-introdu%C3%87%C3%83o)
 	* [DESCRIÇÃO](https://github.com/E-Piratas/Caravela-De-Dados/wiki#2-descri%C3%87%C3%83o-geral)
-	* [INTRODUÇÃO](https://github.com/E-Piratas/Caravela-De-Dados/wiki#3-recursos-do-sistema)
+	* [RECURSOS DO SISTEMA](https://github.com/E-Piratas/Caravela-De-Dados/wiki#3-recursos-do-sistema)
+	* [REQUISITOS NÃO FUNCIONAIS](https://github.com/E-Piratas/Caravela-De-Dados/wiki/Especifica%C3%A7%C3%B5es-De-Requisitos-de-Software-Para-o-Sistema-Gerenciador-de-Sinais#4-requisitos-n%C3%83o-funcionais)
 * Referencias
-	* [Tutorial MQTT]()
-	* [Biblioteca Json]()
-	* [Biblioteca Pubsub]()
+	* [Tutorial MQTT](https://pplware.sapo.pt/tutoriais/tutorial-ligar-um-led-via-mqtt-com-um-esp8266/)
+	* [Biblioteca Json](https://github.com/bblanchon/ArduinoJson)
+	* [Biblioteca Pubsub](https://github.com/hagre/SyncMQTTConnectionESP32_Library)
 ---
 ## **ESP32**
 
@@ -62,4 +63,4 @@ Devido a sua alta capacidade, a empresa amazon disponibiliza diversos tutoriais,
 
 Em nosso programa o ESP 32 lê os dados e transforma essas informações em uma arquivo json, utilizando o protocolo Mqtt, o arquivo json envia os dados até o IBM watson, onde é apresentado na tela e gravado no banco de dados MySQL instanciado na AWS.
 
-![cominuca](https://github.com/E-Piratas/Caravela-De-Dados/blob/master/documentos/Imagens/diagrama.png)
+![comunica](https://github.com/E-Piratas/Caravela-De-Dados/blob/master/documentos/Imagens/diagrama.png)
