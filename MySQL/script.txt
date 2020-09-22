@@ -1,0 +1,23 @@
+DROP DATABASE Caravela_de_Dados;
+CREATE DATABASE IF NOT EXISTS Caravela_de_Dados;
+USE Caravela_de_Dados;
+CREATE TABLE Usuarios (
+	nome VARCHAR(300) PRIMARY KEY,
+    cargo ENUM("CAPITAO","NAVEGADOR", 'MARUJO') NOT NULL,
+	senha INT NOT NULL
+);
+CREATE TABLE Sensor (
+	id VARCHAR(25),
+    locals ENUM("SALA","GARAGEM", 'COZINHA') NOT NULL,
+	valor INT NOT NULL,
+	data_envio DATE NOT NULL,
+    hora_envio TIME (0) NOT NULL
+);
+
+desc Sensor;
+INSERT INTO Usuarios (nome,cargo,senha) VALUES
+("KiritoKunSama", "CAPITAO",123456789),
+("RichatzCoffee", "MARUJO",123456);
+show tables;
+SELECT * FROM Sensor;
+SELECT * FROM Usuarios;
