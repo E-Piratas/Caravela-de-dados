@@ -141,5 +141,25 @@ void Envia_por_request ()
         "disabled": true,
         "hidden": true
     }
-    ```
-
+```
+### A informação é recebida Utilizando Node Red Para construir o Dashbpoard
+```c++
+ {
+        "id": "357fe95f.4bb866",
+        "type": "function",
+        "z": "79079cba.bf9c24",
+        "name": "",
+        "func": "msg.payload = msg.payload.Barco.S0+msg.payload.Barco.S1+msg.payload.Barco.S2+msg.payload.Barco.S3+msg.payload.Barco.S4+msg.payload.Barco.S5+msg.payload.Barco.S6+msg.payload.Barco.S7+msg.payload.Barco.S8+msg.payload.Barco.S9+msg.payload.Barco.S10+msg.payload.Barco.S11+msg.payload.Barco.S12+msg.payload.Barco.S13+msg.payload.Barco.S14+msg.payload.Barco.S15+msg.payload.Barco.S16+msg.payload.Barco.S17+msg.payload.Barco.S18+msg.payload.Barco.S19+msg.payload.Barco.S20+msg.payload.Barco.S21+msg.payload.Barco.S22+msg.payload.Barco.S23+msg.payload.Barco.S24;\nmsg.payload = msg.payload/25;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 393.5,
+        "y": 286,
+        "wires": [
+            [
+                "43bbb15.37edc5",
+                "919cf147.653d9"
+            ]
+        ],
+```
