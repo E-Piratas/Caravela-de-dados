@@ -62,6 +62,4 @@ Devido a sua alta capacidade, a empresa amazon disponibiliza diversos tutoriais,
 
 Em nosso programa o ESP 32 lê os dados e transforma essas informações em uma arquivo json, utilizando o protocolo Mqtt, o arquivo json envia os dados até o IBM watson, onde é apresentado na tela e gravado no banco de dados MySQL instanciado na AWS.
 
-https://github.com/E-Piratas/Caravela-De-Dados/blob/master/documentos/Imagens/diagrama_comunica%C3%A7%C3%A3o.png
-
-
+![cominuca](https://github.com/E-Piratas/Caravela-De-Dados/blob/master/documentos/Imagens/diagrama.png)
