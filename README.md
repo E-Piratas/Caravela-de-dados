@@ -45,3 +45,23 @@ Para visualizar as aquisições, foi construído um dashboard na plataforma IBM 
 
 Além da interface visual essa aplicação permite a integração com um banco de dados em MySQL, onde ficam armazenados todas as aquisições de nossos dados.
 
+O IBM watson  ainda possibilita diversas aplicações  descritas em seu site:
+![Clique Aqui](https://www.ibm.com)
+
+## MYSQL - AWS
+
+Como desejamos salvar os dados, optamos por utilizar um bando de dados, em nossa aplicação usamos o MySQL. O motivo de utilizar é devido a sua agilidade, segurança , gratuito e que suporta diversas linguagens de programação. 
+
+Para hospedar o banco de dados usamos o serviço da amazon AWS. Esse serviço possui diversas aplicações que vão desde nossa utilização com a criação de banco de dados em MySQL até mesmo a criação de máquinas virtuais.
+
+Devido a sua alta capacidade, a empresa amazon disponibiliza diversos tutoriais, em nosso projeto utilizamos o seguinte tutorial para instanciar o banco de dados.
+ 
+![Clique Aqui](https://aws.amazon.com/pt/getting-started/hands-on/create-mysql-db/)
+
+## Funcionamento do programa
+
+Em nosso programa o ESP 32 lê os dados e transforma essas informações em uma arquivo json, utilizando o protocolo Mqtt, o arquivo json envia os dados até o IBM watson, onde é apresentado na tela e gravado no banco de dados MySQL instanciado na AWS.
+
+https://github.com/E-Piratas/Caravela-De-Dados/blob/master/documentos/Imagens/diagrama_comunica%C3%A7%C3%A3o.png
+
+
