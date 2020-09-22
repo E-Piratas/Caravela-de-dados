@@ -27,7 +27,7 @@ Essa placa permite adicionar diversos sensores, podendo receber sinais analogico
 
 Para mais informações acesse o site da fabricante do chip:
 
-https://www.espressif.com/en/products/socs/esp32
+[Clique Aqui](https://www.espressif.com/en/products/socs/esp32)
 
 ## **MQTT**
 
@@ -46,7 +46,7 @@ Para visualizar as aquisições, foi construído um dashboard na plataforma IBM 
 Além da interface visual essa aplicação permite a integração com um banco de dados em MySQL, onde ficam armazenados todas as aquisições de nossos dados.
 
 O IBM watson  ainda possibilita diversas aplicações  descritas em seu site:
-![Clique Aqui](https://www.ibm.com)
+[Clique Aqui](https://www.ibm.com)
 
 ## MYSQL - AWS
 
@@ -56,7 +56,7 @@ Para hospedar o banco de dados usamos o serviço da amazon AWS. Esse serviço po
 
 Devido a sua alta capacidade, a empresa amazon disponibiliza diversos tutoriais, em nosso projeto utilizamos o seguinte tutorial para instanciar o banco de dados.
  
-![Clique Aqui](https://aws.amazon.com/pt/getting-started/hands-on/create-mysql-db/)
+[Clique Aqui](https://aws.amazon.com/pt/getting-started/hands-on/create-mysql-db/)
 
 ## Funcionamento do programa
 
