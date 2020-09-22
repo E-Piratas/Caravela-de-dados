@@ -142,7 +142,7 @@ void Envia_por_request ()
         "hidden": true
     }
 ```
-### A informação é recebida Utilizando Node Red Para construir o Dashbpoard
+### A informação é recebida Utilizando Node Red Para construir o Dashboard
 ```c++
  {
         "id": "357fe95f.4bb866",
