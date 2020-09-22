@@ -9,9 +9,9 @@
 E-Piratas é uma equipe de Acadêmicos da disciplina de Engenharia de Software e este é um projeto de comunicação MQTT entre uma ESP 32 que envia dados de temperatura Para (o servidor boladao da ibm) que Salva no Banco de dados e cria um gráfico interativo.  
 Recursos 
 * [Requisitos de Projeto](https://github.com/E-Piratas/Caravela-de-dados/wiki)
-	* [INTRODUÇÃO](https://github.com/E-Piratas/Caravela-de-dados/wiki)
-	* [DESCRIÇÃO](https://github.com/E-Piratas/Caravela-de-dados/wiki)
-	* [INTRODUÇÃO](https://github.com/E-Piratas/Caravela-de-dados/wiki)
+	* [INTRODUÇÃO](https://github.com/E-Piratas/Caravela-De-Dados/wiki#1-introdu%C3%87%C3%83o)
+	* [DESCRIÇÃO](https://github.com/E-Piratas/Caravela-De-Dados/wiki#2-descri%C3%87%C3%83o-geral)
+	* [INTRODUÇÃO](https://github.com/E-Piratas/Caravela-De-Dados/wiki#3-recursos-do-sistema)
 * Referencias
 	* [Tutorial MQTT]()
 	* [Biblioteca Json]()
@@ -19,7 +19,7 @@ Recursos
 ---
 ## **ESP32**
 
-![Esp32Logo](https://github.com/E-Piratas/Caravela-de-dados/blob/master/Espressif_ESP32.jpg)
+![Esp32Logo](https://github.com/E-Piratas/Caravela-De-Dados/blob/master/documentos/Imagens/Espressif_ESP32.jpg)
 
 Para o desenvolvimento dessa aplicação, foi utilizado uma placa de prototipagem ESP32 devkit V1. Essa placa possui um chip ESP-WROOM-32 produzido pela empresa espressif, que para nosso projeto apresenta uma característica muito importante que é a capacidade de se conectar a uma rede Wi-Fi, permitindo comunicar com um servidor utilizando MQTT.
 
