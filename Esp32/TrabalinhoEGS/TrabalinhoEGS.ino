@@ -11,13 +11,13 @@ long lastMsg = 0;
 int sensor[QTD]; 
 
 
-
 // -------- seu wifi -----------
-const  char * ssid =  "******" ;
-const  char * password =  "********" ;
+const  char * ssid =  "REDE_WIFI";
+const  char * password =  "SENHA_WIFI";
 
-#define ORG "q2f7zy"
-#define DEVICE_TYPE "ESP32Device"
+
+#define ORG "zyrp8o"
+#define DEVICE_TYPE "ESP32device"
 #define DEVICE_ID "001"
 #define TOKEN "12031203"
 
@@ -30,6 +30,7 @@ char pubTopic[] = "iot-2/evt/status/fmt/json";
 char authMethod[] = "use-token-auth";
 char token[] = TOKEN;
 char clientId[] = "d:" ORG ":" DEVICE_TYPE ":" DEVICE_ID;
+
 
 WiFiClient wifiClient;
 PubSubClient client(server, 1883, NULL, wifiClient);
