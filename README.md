@@ -3,7 +3,9 @@
 ![E-Piratas-Logo](https://github.com/E-Piratas/Caravela-De-Dados/blob/master/documentos/Imagens/E-Piratas-Logo.png)
 --- ---
 
-![VIDEO](https://www.youtube.com/watch?v=CQLTZx4umWg&feature=youtu.be)
+
+Video explicando sobre o funcionamento do sistema:
+[Clique Aqui](https://www.youtube.com/watch?v=CQLTZx4umWg&feature=youtu.be)
 
 ## **Projeto de comunicação MQTT e IOT**                   
 
