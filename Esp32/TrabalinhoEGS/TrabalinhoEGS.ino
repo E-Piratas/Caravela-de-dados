@@ -44,11 +44,6 @@ void Envia_por_request ()
   //  if (now - lastMsg > 1000) {
   lastMsg = now;
 
-//  sensor1= random(2, 33);
-//  sensor2= random(10, 60);
-//  sensor3= random(10, 30);
-//  sensor4= random(10, 100);
-//  sensor5= random(10, 80);
 
   String payload = "{\"Barco\":{";
 
@@ -87,7 +82,7 @@ void Envia_por_request ()
 
 
 
-//----------------------------------------- CALLBACKS--------------------------------------------------------
+//---------------------------------------------------------------------------------------------
 
 
 
